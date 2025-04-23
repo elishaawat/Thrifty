@@ -272,6 +272,35 @@
                             <a href="details.html" class="button new-button"><i class="bx bx-cart-alt new-icon"></i></a>
                         </div>
 
+
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img src="https://i.postimg.cc/QtRrKttL/new-2.png" alt="" class="new-img">
+                            <h3 class="new-title">Air Jordan Zipper</h3>
+                            <span class="new-subtitle">Accessory</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">$11.99</span>
+                                <span class="new-discount">$21.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new-button"><i class="bx bx-cart-alt new-icon"></i></a>
+                        </div>
+
+                        <div class="new-content swiper-slide">
+                            <div class="new-tag">New</div>
+                            <img src="https://i.postimg.cc/QtRrKttL/new-2.png" alt="" class="new-img">
+                            <h3 class="new-title">Air Jordan Zipper</h3>
+                            <span class="new-subtitle">Accessory</span>
+
+                            <div class="new-prices">
+                                <span class="new-price">$11.99</span>
+                                <span class="new-discount">$21.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new-button"><i class="bx bx-cart-alt new-icon"></i></a>
+                        </div>
+
                         <div class="new-content swiper-slide">
                             <div class="new-tag">New</div>
                             <img src="https://i.postimg.cc/bNkVZPJK/new-3.png" alt="" class="new-img">
@@ -340,8 +369,8 @@
                 <div class="steps-container grid">
                     <div class="steps-card">
                         <div class="steps-card-number">01</div>
-                        <h3 class="steps-card-title">Choose Products</h3>
-                        <p class="steps-card-description">We have several varieties you can choose from</p>
+                        <h3 class="steps-card-title">Select Products</h3>
+                        <p class="steps-card-description">Explore a wide range of options available for you.</p>
                     </div>
 
                     <div class="steps-card">
@@ -355,6 +384,13 @@
                         <h3 class="steps-card-title">Get Order Delivered</h3>
                         <p class="steps-card-description">Our delivery process is easy, you receive the order direct to your home</p>
                     </div>
+                </div>
+                <br>
+                
+                <div>
+                    <a href="tel:+254745040360">
+                        <button class="button" style="display: block; margin: 0 auto;">Contact for help</button>
+                      </a>
                 </div>
             </div>
         </section>
@@ -376,7 +412,7 @@
     <footer class="footer section">
         <div class="footer-container container grid">
             <div class="footer-content">
-                <a href="#" class="footer-logo"><i class="bx bxs-shopping-bag footer-logo-icon"> e-shopper</i></a>
+                <a href="#" class="footer-logo"><i class="bx bxs-shopping-bag footer-logo-icon"> Thrifty</i></a>
                 <p class="footer-description">Enjoy the biggest sale <br> of your life</p>
 
                 <ul class="footer-social">
@@ -417,13 +453,36 @@
             </div>
         </div>
 
-        <span class="footer-copy">&#169; <a href="">ULTRA CODE</a>. All rights reserved</span>
+        <span class="footer-copy">&#169; Elishaawat   All rights reserved</span>
     </footer>
 
     <a href="#" class="scrollUp" id="scroll-up"><i class="bx bx-up-arrow-alt scrollup-icon"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        // Initialize Swiper for horizontal scrolling in new items
+        const swiper = new Swiper('.new-swiper', {
+          loop: true,
+          slidesPerView: 3,
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
+          },
+        });
+      </script>
+      
 
     
 </body>
